@@ -1,0 +1,721 @@
+header{
+  width: 1920px;
+}
+
+header span {
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+header, div{
+  background-color: white;
+  color: #000000;
+}
+
+body {
+  padding: 0px;
+  width: 1920px;
+  position: relative;
+}
+
+/*logo部分的样式*/
+#logo {
+  position: relative;
+  background-image: url("../img/店铺首页图片.png");
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 120px;
+  margin: 0px;
+  background-color: black;
+}
+
+/*搜索部分样式*/
+#search {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  background-color: black;
+}
+
+#inputsearch {
+  background-color: bisque;
+  border: solid #dc6906 2px;
+  width: 350px;
+  height: 30px;
+  color: #ff84ab;
+  font-weight: bold;
+}
+/*搜索按钮样式*/
+#btnSearch {
+  height: 30px;
+  width: 75px;
+  background-color: bisque;
+  border: solid #dc6906 2px;
+  color: #ff84ab;
+  font-weight: bold;
+}
+
+header {
+  height: 38px;
+  width: 1920px;
+  background-color: rgba(255, 232, 224, 0);
+  color: black;
+}
+
+header div a,header div span {
+  padding: 10px 10px 10px 0px;
+}
+
+header>span {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a.daohang:link {
+  color: #000000;
+}
+
+a.daohang:visited {
+  color: #000000;
+}
+
+a.daohang:hover {
+  color: #57a957;
+}
+
+a.daohang:active {
+  color: #9780d6;
+}
+/*目录部分样式*/
+#mulu {
+  color: black;
+  position: relative;
+  font-size: 25px;
+}
+
+#xialamulu {
+  position: absolute;
+  background-color: #fffcf9;
+  width: 220px;
+  height: 477px;
+  opacity: 0.9;
+  padding: 10px 0px 10px 0px;
+  margin-top: 0px;
+  z-index: 1;
+  font-size: 18px;
+  cursor: pointer;
+  left: 0px;
+  border: solid white 1px;
+}
+
+#xialamulu div {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding-left:20px;
+  padding: 7px 0px 7px 20px;
+  left: 0px;
+}
+
+.xialaliebiao {
+  display: none;
+  width: 0px;
+  height: 360px;
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 240px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.xialaliebiao li {
+  display: inline-block;
+  width: 215px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  left: 40px;
+}
+
+.xialamululiebiao {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.xialamululiebiao div {
+  position: relative;
+}
+
+.icon-angle-right {
+  position: absolute;
+  left: 195px;
+  color: white;
+}
+
+
+/*侧栏*/
+
+.celan {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 170px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+/*图标*/
+.glyphicon-th-large {
+  color: white;
+  margin-top: 10px;
+}
+/*客服中心*/
+.kfzx .kfzxHead{
+  position: relative;
+  width: 200px;
+  height: 36px;
+  padding-left: 10px;
+  background-color: #ce0f3b;
+  color: black;
+}
+
+.kfzx .kefuzhongxing {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.kfzxBody {
+  display: inline-block;
+  padding-left: 10px;
+  width: 200px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  margin-bottom: 10px;
+}
+
+/*本店搜索*/
+.bdss .bdssHead{
+  position: relative;
+  width: 200px;
+  height: 36px;
+  padding-left: 10px;
+  background-color: #ce0f3b;
+  color: black;
+}
+
+.bdss .bdssBody {
+  width: 200px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  margin-bottom: 10px;
+}
+
+.bdss .bendianshousuo {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bdss .gjz {
+  display: inline-block;
+  width: 110px;
+}
+
+.bdss .jg {
+  display: inline-block;
+  width: 47px;
+}
+
+.bdss button {
+  color: white;
+  background-color: #ce0f3b;
+  border-radius: 6px;
+  border-style: hidden;
+  width: 49px;
+  height: 26px;
+}
+
+  /*宝贝分类*/
+.bbfl {
+
+}
+
+.bbfl a {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.bbfl .bbflHead{
+  position: relative;
+  width: 200px;
+  height: 36px;
+  padding-left: 10px;
+  background-color: #ce0f3b;
+  color: black;
+}
+
+.bbfl .baobeifenlei {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bbfl .bbflBody {
+  display: inline-block;
+  padding-left: 10px;
+  width: 200px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  margin-bottom: 10px;
+}
+
+.bbflBody .changpingfenleilan a{
+  display: block;
+}
+
+.bbflBody .changpingfenleilan .zhonglanmu {
+  display: inline-block;
+}
+
+.bbflBody .changpingfenleilan .zhonglanmu a {
+  display: block;
+}
+
+.bbflBody .changpingfenleilan img {
+  display: inline-block;
+}
+
+.bbflBody .changpingfenleilan .icon-minus {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: black solid 1px;
+  top: -10px;
+  font-size: 1px;
+  font-weight: lighter;
+}
+
+.changpingfenleilan .glyphicon-chevron-right {
+  font-weight: lighter;
+  font-size: 3px;
+}
+
+a.sybb:link {
+  color: #000000;
+}
+
+a.sybb:visited {
+  color: #000000;
+}
+
+a.sybb:hover {
+  color: #57a957;
+}
+
+a.sybb:active {
+  color: #9780d6;
+}
+
+a.fl:link {
+  color: #5e5e5e;
+}
+
+a.fl:visited {
+  color: #5e5e5e;
+}
+
+a.fl:hover {
+  color: #57a957;
+}
+
+a.fl:active {
+  color: #9780d6;
+}
+/*宝贝排行榜*/
+.bbphb .bbphbHead{
+  position: relative;
+  width: 200px;
+  height: 36px;
+  padding-left: 10px;
+  background-color: #ce0f3b;
+  color: black;
+}
+
+.bbphb .bbphbBody {
+  display: inline-block;
+  padding-left: 10px;
+  width: 200px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  margin-bottom: 10px;
+}
+
+.bbphb .bbphbBody a{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.bbphb .bbphbBody p {
+ margin-bottom: 10px;
+}
+
+.bbphb .baobeipaihangbang {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.xsl {
+  position: relative;
+}
+
+.xsl img {
+  display: inline-block;
+  margin: 0px;
+}
+
+.xslBody {
+  position: relative;
+  float: right;
+  right: -10px;
+}
+
+.xsl li {
+  display: inline-block;
+}
+
+.xsl ul {
+  padding: 10px 10px 10px 0px;
+}
+
+.ckgdbb {
+  position: relative;
+  left: 50px;
+}
+
+.scl {
+  position: relative;
+}
+
+.scl img {
+  display: inline-block;
+  margin: 0px;
+}
+
+.sclBody {
+  position: relative;
+  float: right;
+  right: -10px;
+}
+
+.scl li {
+  display: inline-block;
+}
+
+.scl ul {
+  padding: 10px 10px 10px 0px;
+}
+/*宝贝推荐*/
+.bbtj .bbtjHead{
+  position: relative;
+  width: 200px;
+  height: 36px;
+  padding-left: 10px;
+  background-color: #ce0f3b;
+  color: black;
+}
+
+.bbtj .baobeituijian {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+a.gd:link {
+  color: #fffcf9;
+}
+
+.bbtj .bbtjBody {
+  display: inline-block;
+  padding-left: 10px;
+  width: 200px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  border-bottom: 1px solid #919191;
+  margin-bottom: 10px;
+}
+
+.bbtj a {
+  display: inline-block;
+}
+
+.bbtjBody {
+  position: relative;
+  width: 180px;
+}
+
+.bbtjBody img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.bbtjBody span {
+  position: relative;
+  color: #ce0f3b;
+  font-size: 14px;
+  font-weight: bolder;
+  left: 110px;
+  top: 1px;
+}
+
+.bbtjBody .bbtjfen {
+  border-bottom: #919191 1px solid;
+}
+
+
+.celan2 {
+  position: absolute;
+  top: 160px;
+  left: 590px;
+  background-color: white;
+  margin: 0;
+}
+
+.breadcrumb > li + li:before {
+  color: #CCCCCC;
+  content: " 》 ";
+  padding: 0 5px;
+}
+
+.celan2 .breadcrumb {
+  color: black;
+}
+
+.celan2 .daohang {
+  width: 850px;
+  height: 25px;
+  background-color: white;
+
+}
+
+.celan2 .breadcrumb {
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+a.dh:link {
+  color: #000000;
+}
+
+a.dh:visited {
+  color: #000000;
+}
+
+a.dh:hover {
+  color: #57a957;
+}
+
+a.daohanglei:active {
+  color: #9780d6;
+}
+
+a.daohanglei:link {
+  color: #000000;
+}
+
+a.daohanglei:visited {
+  color: #000000;
+}
+
+a.daohanglei:hover {
+  color: #57a957;
+}
+
+a.daohanglei:active {
+  color: #9780d6;
+}
+
+#daohanglei a {
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  font-size: 14px;
+}
+
+#daohanglei {
+  margin-bottom: 20px;
+}
+.daohang p,.daohang input,.daohang button{
+  display: inline-block;
+}
+
+#sscpzs {
+  display: inline-block;
+  color: #5e5e5e;
+  margin-left:15px;
+}
+
+#sszd {
+  margin-left: 40px;
+}
+
+#gjz {
+  margin-left: 20px;
+}
+
+#gjz2 {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.jiage2 {
+  width: 70px;
+}
+
+#ss {
+  width: 60px;
+  border-radius: 5px;
+  border: solid 1px #919191;
+  margin-left: 10px;
+}
+
+.celan2 #daohanglei {
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+
+.celan2 .daohanglei2 {
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+
+}
+
+.paixu {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  border-right: 1px solid #919191;
+  border-top: 1px solid #919191;
+  padding: 10px 10px 0px 10px;
+}
+
+.paixu span {
+  color: #5e5e5e;
+  cursor: pointer;
+}
+
+.paixu p {
+  font-size: 18px;
+}
+
+.glyphicon-list-alt {
+  font-size: 22px;
+}
+
+.glyphicon-list {
+  font-size: 22px;
+}
+
+.celan2 span {
+  display: inline-block;
+}
+
+.glyphicon-arrow-down .glyphicon-arrow-up {
+  font-size: 22px;
+}
+
+.pre,.nex {
+  display: inline-block;
+  border: 1px solid #919191;
+  font-size: 18px;
+}
+
+.cp {
+  display: inline-block;
+  width: 260px;
+}
+
+.cp img {
+  display: inline-block;
+  border-bottom: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
+
+.cp a{
+  display: inline-block;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.cp a:link {
+  color: #000000;
+}
+
+.cp a:visited {
+  color: #000000;
+}
+
+.cp a:hover {
+  color: #57a957;
+}
+
+.cp a:active {
+  color: #9780d6;
+}
+
+.cp p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.cp {
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+.yema {
+  position: relative;
+  float: right;
+}
+
+.yema a {
+  display: inline-block;
+  border: #cccccc 1px solid;
+  padding: 5px 10px 5px 10px;
+}
+
+.yeshu ,.yeshu li{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.yeshu2 {
+  display: inline-block;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+}
+
+.qd {
+  margin: 10px;
+  background-color: white;
+  border-style: solid;
+}

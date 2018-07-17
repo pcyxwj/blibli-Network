@@ -1,0 +1,445 @@
+header{
+  width: 1920px;
+}
+
+header span {
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+header, div{
+  background-color: white;
+  color: #000000;
+}
+
+body {
+  padding: 0px;
+  width: 1920px;
+  position: relative;
+}
+
+/*logo部分的样式*/
+#logo {
+  position: relative;
+  background-image: url("../img/店铺首页图片.png");
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 120px;
+  margin: 0px;
+  background-color: black;
+}
+
+/*搜索部分样式*/
+#search {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  background-color: black;
+}
+
+#inputsearch {
+  background-color: bisque;
+  border: solid #dc6906 2px;
+  width: 350px;
+  height: 30px;
+  color: #ff84ab;
+  font-weight: bold;
+}
+/*搜索按钮样式*/
+#btnSearch {
+  height: 30px;
+  width: 75px;
+  background-color: bisque;
+  border: solid #dc6906 2px;
+  color: #ff84ab;
+  font-weight: bold;
+}
+
+header {
+  height: 38px;
+  width: 1920px;
+  background-color: rgba(255, 232, 224, 0);
+  color: black;
+}
+
+header div a,header div span {
+  padding: 10px 10px 10px 0px;
+}
+
+header>span {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a.daohang:link {
+  color: #000000;
+}
+
+a.daohang:visited {
+  color: #000000;
+}
+
+a.daohang:hover {
+  color: #57a957;
+}
+
+a.daohang:active {
+  color: #9780d6;
+}
+/*目录部分样式*/
+#mulu {
+  color: black;
+  position: relative;
+  font-size: 25px;
+}
+
+#xialamulu {
+  position: absolute;
+  background-color: #fffcf9;
+  width: 220px;
+  height: 477px;
+  opacity: 0.9;
+  padding: 10px 0px 10px 0px;
+  margin-top: 0px;
+  z-index: 1;
+  font-size: 18px;
+  cursor: pointer;
+  left: 0px;
+  border: solid white 1px;
+}
+
+#xialamulu div {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding-left:20px;
+  padding: 7px 0px 7px 20px;
+  left: 0px;
+}
+
+.xialaliebiao {
+  display: none;
+  width: 0px;
+  height: 360px;
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 240px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.xialaliebiao li {
+  display: inline-block;
+  width: 215px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  left: 40px;
+}
+
+.xialamululiebiao {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.xialamululiebiao div {
+  position: relative;
+}
+
+.icon-angle-right {
+  position: absolute;
+  left: 195px;
+  color: white;
+}
+
+
+
+/*设置当前状态样式*/
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+
+header span{
+  padding: 5px;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/*快递通告样式*/
+#kuaiDigg {
+  display: block;
+  height: 450px;
+  position: relative;
+  background-image: url("../img/快递通告.jpg");
+  background-repeat: no-repeat;
+}
+
+#kuaiDigg textarea {
+  position: relative;
+  width: 1001px;
+  height: 175px;
+  top: 193px;
+  left: 460px;
+  background-image: url("../img/快递公告文本框.png");
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+/*重磅推荐栏*/
+.zbtjcp {
+  width: 320px;
+  height: 51px;
+  font-size: 25px;
+  padding: 13px 0px 13px 0px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-style: inherit;
+}
+
+.rmb {
+  position: relative;
+  display: inline-block;
+  color: #fab912;
+  font-size: 25px;
+  font-weight: bold;
+  width: 110px;
+  margin: 0px;
+}
+
+.jiage {
+  color: #fab912;
+  font-size: 35px;
+  width: 35px;
+  margin: 0px;
+}
+
+.ljgm {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 43px;
+}
+
+#zhongBangtjLan{
+  position: relative;
+  height: 1764px;
+  background-image: url("../img/重磅推荐.jpg");
+  background-repeat: no-repeat;
+}
+
+#zhongBangtjLan .dakuang {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  height: 390px;
+  border-radius: 10px;
+  background-color: #000000;
+  margin: 0px 17px 38px 0px;
+  top: 411px;
+  left: 460px;
+}
+
+#zhongBangtjLan .xiaokuang {
+  display: inline-block;
+  position: relative;
+  width: 306px;
+  height: 276px;
+  border-radius: 10px;
+  background-color: #fffcf9;
+  margin: 7px 7px 0px 7px;
+}
+
+#zhongBangtjLan .xiaokuang img{
+  display: inline-block;
+  width: 306px;
+  height: 276px;
+  overflow: hidden;
+}
+
+#zhongBangtjLan .dakuang .zbtjcp {
+  width: 320px;
+  height: 51px;
+}
+
+
+#zhongBangtjLan .dakuang .rmb {
+  left: 25px;
+}
+
+#zhongBangtjLan .dakuang .jiage {
+
+}
+
+#zhongBangtjLan .dakuang .ljgm {
+  left: 60px;
+  bottom: 10px;
+}
+
+
+/*分类栏*/
+#fenLei{
+  position: relative;
+  height: 532px;
+  background-image: url("../img/分类.png");
+  background-repeat: no-repeat;
+}
+
+#fenLei div {
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 305px;
+  top: 97px;
+  left: 360px;
+  background-color: white;
+  margin-right: 15px;
+  opacity: 0;
+}
+
+/*推荐栏*/
+.tuiJianLan {
+  position: relative;
+}
+
+.big{
+  display: inline-block;
+  position: relative;
+  width: 242px;
+  height: 303px;
+  background-color: #000000;
+  margin: 0px 7px 23px 0px;
+}
+
+.smaller {
+  display: inline-block;
+  position: relative;
+  width: 234px;
+  height: 217px;
+  background-color: #fffcf9;
+  margin: 4px 4px 0px 4px;
+}
+
+.big .zbtjcp {
+  width: 242px;
+  height: 35px;
+  padding: 5px 0px 0px 0px;
+}
+
+.big .ljgm {
+  bottom: 7px;
+}
+
+.big .rmb {
+  position: relative;
+  font-size: 20px;
+  left: 8px;
+}
+
+.big .jiage {
+  font-size: 30px;
+}
+
+.big .ljgm {
+  position: relative;
+  width: 100px;
+  height: 34px;
+  right: -18px;
+}
+/*周边栏*/
+#zhouBianLan{
+  height: 1100px;
+  background-image: url("../img/3C周边.jpg");
+  background-repeat: no-repeat;
+}
+
+#zhouBianLan .big{
+  top: 362px;
+  left: 459px;
+}
+
+/*家居宅品栏*/
+#jiaJuzpLan{
+  height: 1116px;
+  background-image: url("../img/家居宅品.jpg");
+  background-repeat: no-repeat;
+}
+
+#jiaJuzpLan .big {
+  position: relative;
+  top:350px;
+  left:459px;
+}
+
+/*毛绒萌物栏*/
+#maoRongmwLan{
+  height: 1100px;
+  background-image: url("../img/毛绒萌物.jpg");
+  background-repeat: no-repeat;
+}
+
+#maoRongmwLan .big {
+  position: relative;
+  top:333px;
+  left:459px;
+}
+/*酷炫衣饰栏*/
+#xuanKuYiShiLan{
+  height: 1095px;
+  background-image: url("../img/酷炫衣饰.jpg");
+  background-repeat: no-repeat;
+}
+
+#xuanKuYiShiLan .big {
+  position: relative;
+  top:333px;
+  left:459px;
+}
+
+/*周边文具栏*/
+#wenJuLan{
+  height: 1198px;
+  background-image: url("../img/周边文具.jpg");
+  background-repeat: no-repeat;
+}
+
+#wenJuLan .big {
+  position: relative;
+  top:333px;
+  left:459px;
+}
+/*返回顶部栏*/
+#fanHuidb{
+  position: relative;
+  height: 357px;
+  background-image: url("../img/返回顶部.jpg");
+  background-repeat: no-repeat;
+}
+
+/**/
+#fanHuidb div {
+  position: relative;
+  width: 500px;
+  height: 130px;
+  top: 120px;
+  left: 720px;
+  background-color: white;
+  opacity: 0;
+}
+
+footer {
+
+}

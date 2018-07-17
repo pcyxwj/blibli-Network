@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品页</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../Font-Awesome-3.2.1/css/font-awesome.css">
+  <link rel="stylesheet" href="../css/changpingye.css">
+  <script type="text/javascript" src="../bootstrap-3.3.7-dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../script/changpingye.js"></script>
+</head>
+<body>
+<div id="logo">
+  <div id="search">
+    <input type="text"  id="inputsearch" class="" value="输入商品名称" />
+    <button id="btnSearch" class="" value="搜索">搜索</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-0">
+      <header>
+          <span id="mulu">目录
+            <ul id="xialamulu">
+      <div class="xialamululiebiao">所有宝贝<i class="icon-angle-right icon-large"></i></div>
+      <ul id="suoyoubaobei" class="xialaliebiao">
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按销量</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按新品</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按价格</li>
+      </ul>
+     <div class="xialamululiebiao">高能速报<i class="icon-angle-right icon-large"></i></div>
+      <ul id="gaonengsubao" class="xialaliebiao">
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;新品上市</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;热销榜单</li>
+      </ul>
+      <div class="xialamululiebiao">手办区<i class="icon-angle-right icon-large"></i></div>
+        <ul id="shoubanqua" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;现货区</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;预定区</li>
+        </ul>
+      <div class="xialamululiebiao">3C周边<i class="icon-angle-right icon-large"></i></div>
+        <ul id="sanczhoubian" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;手机壳</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;鼠标垫</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;其他</li>
+        </ul>
+      <div class="xialamululiebiao">毛绒萌物<i class="icon-angle-right icon-large"></i></div>
+      <ul></ul>
+      <div class="xialamululiebiao">衣着装备<i class="icon-angle-right icon-large"></i></div>
+        <ul id="yizhuozhuangbei" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;T恤</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;鞋类</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;卫衣</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;诚信宅</li>
+        </ul>
+      <div class="xialamululiebiao">家居宅品<i class="icon-angle-right icon-large"></i></div>
+        <ul id="jiajuzaipin" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;抱枕/靠枕</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;等身枕套</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;家居日用</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;美味小食</li>
+        </ul>
+      <div class="xialamululiebiao">箱包配饰<i class="icon-angle-right icon-large"></i></div>
+        <ul id="xiangbaopeishi" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;拉杆箱</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;包包</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;配饰</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;梦100痛包</li>
+        </ul>
+      <div class="xialamululiebiao">文具<i class="icon-angle-right icon-large"></i></div>
+        <ul id="wenju" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;笔记本/印章</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;挂件/卡套</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;文件夹/徽章</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;贴纸/胶带</li>
+        </ul>
+      <div class="xialamululiebiao">热门IP<i class="icon-angle-right icon-large"></i></div>
+        <ul id="renmengIP" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;梦王国与沉睡的100王子</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;星梦手记</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;宇宙巡警露露子</li>
+        </ul>
+      <div class="xialamululiebiao">【福袋】<i class="icon-angle-right icon-large"></i></div>
+    </ul>
+          </span>
+        <a class="daohang" href="#"><span id="shouYe">首页</span></a>
+        <a class="daohang" href="#"><span id="fuDai">【福袋】</span></a>
+        <a class="daohang" href="#"><span id="gaoNengsb">高能速报</span></a>
+        <a class="daohang" href="#"><span id="yiZhuo">衣着装备</span></a>
+        <a class="daohang" href="#"><span id="jiaJuzp">家居宅品</span></a>
+        <a class="daohang" href="#"><span id="zhouBian">3C周边</span></a>
+        <a class="daohang" href="#"><span id="maoRongww">毛绒萌物</span></a>
+        <a class="daohang" href="#"><span id="shouBanQu">手办区</span></a>
+      </header>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-0">
+      <aside class="celan">
+
+        <div class="kfzx">
+          <div class="kfzxHead">
+            <span class="glyphicon glyphicon-th-large">
+            </span>
+            <p class="kefuzhongxing">客服中心</p>
+          </div>
+
+          <div class="kfzxBody">
+            <br>
+            <strong class="gzsj">工作时间</strong>
+            <br>
+            <p class="gzsj">&nbsp;周一至周日：8:30-0:30</p>
+            <hr>
+            <strong class="zxzx">在线咨询</strong>
+            <p class="zxzx">&nbsp;客服分组</p>
+            <hr>
+          </div>
+        </div>
+
+          <div class="bdss">
+            <div class="bdssHead">
+            <span class="glyphicon glyphicon-th-large">
+            </span>
+              <p class="bendianshousuo">本店搜索</p>
+            </div>
+
+            <div class="bdssBody">
+              <br>
+              关键字<input class="gjz" type="text">
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;价格<input class="jg" type="text">&nbsp;-&nbsp;<input class="jg" type="text">
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">搜索</button>
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a class="fl" href="#">福袋</a>
+              <a class="fl" href="#">拉杆箱</a>
+              <a class="fl" href="#">移动电源</a>
+              <br><br>
+            </div>
+          </div>
+
+        <div class="bbfl">
+          <div class="bbflHead">
+            <span class="glyphicon glyphicon-th-large">
+            </span>
+            <p class="baobeifenlei">宝贝分类</p>
+
+        </div>
+
+          <div class="bbflBody">
+              <a class="sybb" href="#">查看所有宝贝</a>
+              <br>
+              <a class="sybb" href="#">按销量</a>
+              <a class="sybb" href="#">按新品</a>
+              <a class="sybb" href="#">按价格</a>
+              <a class="sybb" href="#">按收藏</a>
+            <div class="changpingfenleilan">
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/gnsb.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>新品上市</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>热销榜单</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/slxr.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>现货区</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>预定区</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/sczb.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>手机壳</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>鼠标垫</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>其他</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/mrmw.jpg"></a>
+              <br>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/yzzb.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>T恤</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>鞋类</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>卫衣</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>诚信宅</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/jjzp.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>抱枕/靠枕</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>等身枕套</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>家居日用</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>美味小食</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/xbps.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>拉杆箱</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>包包</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>配饰</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>梦100痛包</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/twj.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>笔记本/印章</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>挂件/卡套</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>文件夹/徽章</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>贴纸/胶带</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/rmipzb.jpg"></a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>梦王国与沉睡的100王子</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>星梦手记</a>
+                <a class="fl" href="#"><span class="glyphicon glyphicon-chevron-right"></span>宇宙巡警露露子</a>
+              <i class="icon-minus"></i><a href="#" class="zhonglanmu"><img src="../img/xbps.jpg"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bbphb">
+          <div class="bbphbHead">
+            <span class="glyphicon glyphicon-th-large">
+            </span>
+            <p class="baobeipaihangbang">宝贝排行榜</p>
+
+          </div>
+
+          <div class="bbphbBody">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#">销售量</a></li>
+              <li><a href="#">收藏数</a></li>
+            </ul>
+
+            <div class="xsl">
+
+              <ul>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="xslBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已售出<strong>54</strong>件</p>
+                  </div>
+                  <hr>
+                </li>
+                <a href="#" class="ckgdbb">查看更多宝贝</a>
+              </ul>
+            </div>
+
+            <div class="scl">
+
+              <ul>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <li>
+                  <a class="thumbnail" href="#"><img src="../img/销售量1.png"></a>
+                  <div class="sclBody">
+                    <a href="#">哔哩哔哩周边</a>
+                    <p>￥2333</p>
+                    <p>已收藏<strong>23</strong>笔</p>
+                  </div>
+                  <hr>
+                </li>
+                <a href="#" class="ckgdbb">查看更多宝贝</a>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+        <div class="bbtj">
+          <div class="bbtjHead">
+            <span class="glyphicon glyphicon-th-large">
+            </span>
+            <p class="baobeituijian">宝贝推荐</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gd" href="#">更多></a>
+          </div>
+
+          <div class="bbtjBody">
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+            <div class="bbtjfen">
+              <img src="../img/bbtj.jpg">
+              <a href="#">bilibili 哔哩哔哩周边玄学神秘 人气福袋 一发入欧含5-7件</a>
+              <span class="jiage">￥59.00</span>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+      <aside class="celan2">
+        <div class="daohang">
+          <ol class="breadcrumb">
+            <li><a href="#" class="dh">所有宝贝</a></li>
+            <li><a href="#" class="dh">高能速报</a></li>
+        </ol>
+          <div id="daohanglei">
+          <a href="#" class="daohanglei">新品上市</a>
+          <a href="#" class="daohanglei">热销榜单</a>
+        </div>
+          <div class="daohanglei2">
+          <p id="sscpzs">共搜索到<span>70</span>个符合条件的商品。</p>
+          <p id="sszd">搜索整店：</p><input id="sszd2" type="checkbox">
+          <p id="gjz">关键字：</p><input id="gjz2" type="text">
+          <p class="jiage">价格：</p><input class="jiage2" type="text"><p class="jiage">到</p><input class="jiage2" type="text">
+          <button id="ss">搜索</button>
+          </div>
+          <div class="paixu">
+            <p>显示:&nbsp;&nbsp;</p><span class="glyphicon glyphicon-list-alt
+"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>排序：&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            人气 <span class="glyphicon glyphicon-arrow-down rq"></span>
+            销量 <span class="glyphicon glyphicon-arrow-down xl"></span>
+            新品 <span class="glyphicon glyphicon-arrow-down xp"></span>
+            价格 <span class="glyphicon glyphicon-arrow-up jg"></span>
+            收藏 <span class="glyphicon glyphicon-arrow-down sc"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>1/3</span>
+            <a class="pre">上一页</a>
+            <a class="nex">下一页</a>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="cp">
+            <img src="../img/cpy.jpg" class="cplb"><br>
+            <a href="#">bilibili 哔哩哔哩B站周边 小电视香皂 沐浴肥皂 动漫二次元</a>
+            <p><strong class="jiage3">￥15.00</strong>&nbsp;&nbsp;&nbsp;已售：<span>1</span>件</p>
+            <br>
+            <p>评价(<strong class="pj">17</strong>)</p>
+          </div>
+
+          <div class="yema">
+              <a href="#" class="syy">上一页</a>
+            <ul class="yeshu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+            <a href="#" class="xyy">下一页</a>
+            到第<input type="text" class="yeshu2">页<button class="qd" type="submit">确定</button>
+          </div>
+
+          </div>
+      </aside>
+
+</body>
+</html>

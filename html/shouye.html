@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+
+  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../Font-Awesome-3.2.1/css/font-awesome.css">
+  <link rel="stylesheet" href="../css/shouye.css">
+  <script type="text/javascript" src="../bootstrap-3.3.7-dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../script/shouye.js"></script>
+</head>
+<body>
+  <div id="logo">
+    <div id="search">
+      <input type="text"  id="inputsearch" class="" value="输入商品名称" />
+      <button id="btnSearch" class="" value="搜索">搜索</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-offset-1">
+  <header>
+          <span id="mulu">目录
+            <ul id="xialamulu">
+      <div class="xialamululiebiao">所有宝贝<i class="icon-angle-right icon-large"></i></div>
+      <ul id="suoyoubaobei" class="xialaliebiao">
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按销量</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按新品</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;按价格</li>
+      </ul>
+     <div class="xialamululiebiao">高能速报<i class="icon-angle-right icon-large"></i></div>
+      <ul id="gaonengsubao" class="xialaliebiao">
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;新品上市</li>
+        <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;热销榜单</li>
+      </ul>
+      <div class="xialamululiebiao">手办区<i class="icon-angle-right icon-large"></i></div>
+        <ul id="shoubanqua" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;现货区</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;预定区</li>
+        </ul>
+      <div class="xialamululiebiao">3C周边<i class="icon-angle-right icon-large"></i></div>
+        <ul id="sanczhoubian" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;手机壳</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;鼠标垫</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;其他</li>
+        </ul>
+      <div class="xialamululiebiao">毛绒萌物<i class="icon-angle-right icon-large"></i></div>
+      <ul></ul>
+      <div class="xialamululiebiao">衣着装备<i class="icon-angle-right icon-large"></i></div>
+        <ul id="yizhuozhuangbei" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;T恤</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;鞋类</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;卫衣</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;诚信宅</li>
+        </ul>
+      <div class="xialamululiebiao">家居宅品<i class="icon-angle-right icon-large"></i></div>
+        <ul id="jiajuzaipin" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;抱枕/靠枕</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;等身枕套</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;家居日用</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;美味小食</li>
+        </ul>
+      <div class="xialamululiebiao">箱包配饰<i class="icon-angle-right icon-large"></i></div>
+        <ul id="xiangbaopeishi" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;拉杆箱</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;包包</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;配饰</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;梦100痛包</li>
+        </ul>
+      <div class="xialamululiebiao">文具<i class="icon-angle-right icon-large"></i></div>
+        <ul id="wenju" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;笔记本/印章</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;挂件/卡套</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;文件夹/徽章</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;贴纸/胶带</li>
+        </ul>
+      <div class="xialamululiebiao">热门IP<i class="icon-angle-right icon-large"></i></div>
+        <ul id="renmengIP" class="xialaliebiao">
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;梦王国与沉睡的100王子</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;星梦手记</li>
+          <li><i class="icon-caret-right icon-resize-small"></i>&nbsp;&nbsp;&nbsp;宇宙巡警露露子</li>
+        </ul>
+      <div class="xialamululiebiao">【福袋】<i class="icon-angle-right icon-large"></i></div>
+    </ul>
+          </span>
+          <a href="#"><span id="shouYe">首页</span></a>
+          <a href="#"><span id="fuDai">【福袋】</span></a>
+          <a href="#"><span id="gaoNengsb">高能速报</span></a>
+          <a href="#"><span id="yiZhuo">衣着装备</span></a>
+          <a href="#"><span id="jiaJuzp">家居宅品</span></a>
+          <a href="#"><span id="zhouBian">3C周边</span></a>
+          <a href="#"><span id="maoRongww">毛绒萌物</span></a>
+          <a href="#"><span id="shouBanQu">手办区</span></a>
+  </header>
+      </div>
+    </div>
+  </div>
+  <div id="lunbotu">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="../img/lunbotu1.png" alt="First slide">
+      </div>
+      <div class="item">
+        <img src="../img/lunbotu2.png" alt="Second slide">
+      </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+
+  <!--快递公告-->
+  <div id="kuaiDigg">
+    <textarea>快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告快递公告</textarea>
+  </div>
+
+  <!--重磅推荐-->
+  <div id="zhongBangtjLan">
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐1.jpg">
+      </div>
+      <div class="zbtjcp">小电视</div>
+      <p class="rmb">RMB:<span class="jiage">233</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐1.jpg">
+      </div>
+      <div class="zbtjcp">小电视</div>
+      <p class="rmb">RMB:<span class="jiage">233</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐1.jpg">
+      </div>
+      <div class="zbtjcp">小电视</div>
+      <p class="rmb">RMB:<span class="jiage">233</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <br>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐2.jpg">
+      </div>
+      <div class="zbtjcp">茶杯</div>
+      <p class="rmb">RMB:<span class="jiage">99</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐2.jpg">
+      </div>
+      <div class="zbtjcp">茶杯</div>
+      <p class="rmb">RMB:<span class="jiage">99</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐2.jpg">
+      </div>
+      <div class="zbtjcp">茶杯</div>
+      <p class="rmb">RMB:<span class="jiage">99</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <br>
+
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐3.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐3.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+    <div class="dakuang">
+
+      <div class="xiaokuang">
+        <img src="../img/重磅推荐3.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买.png">
+    </div>
+
+  </div>
+
+  <!--分类-->
+  <div id="fenLei">
+    <!--高能速报-->
+    <div id="gnsb"><a href="#"></a></div>
+    <!--3C周边-->
+    <div id="sczb"><a href="#"></a></div>
+    <!--毛绒萌物-->
+    <div id="mrmw"><a href="#"></a></div>
+    <!--家居宅品-->
+    <div id="jjzp"><a href="#"></a></div>
+    <!--周边文具-->
+    <div id="zbwj"><a href="#"></a></div>
+    <!--炫酷衣饰-->
+    <div id="xkys"><a href="#"></a></div>
+    <!--塑料小人-->
+    <div id="slxr"><a href="#"></a></div>
+  </div>
+
+  <!--3C周边-->
+  <div id="zhouBianLan" class="tuiJianLan">
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <br>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+    <div class="zbtjcp">玩偶</div>
+    <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+  </div>
+
+  <!--家居宅品-->
+  <div id="jiaJuzpLan" class="tuiJianLan">
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <br>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+  </div>
+
+  <!--毛绒萌物-->
+  <div id="maoRongmwLan" class="tuiJianLan">
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <br>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+  </div>
+
+  <!--炫酷衣饰-->
+  <div id="xuanKuYiShiLan" class="tuiJianLan">
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <br>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+  </div>
+
+  <!--周边文具-->
+  <div id="wenJuLan" class="tuiJianLan">
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <br>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+
+    <div class="big">
+      <div class="smaller">
+        <img src="../img/3C周边1.jpg">
+      </div>
+      <div class="zbtjcp">玩偶</div>
+      <p class="rmb">RMB:<span class="jiage">108</span></p><img class="ljgm" src="../img/立即购买小.png">
+    </div>
+  </div>
+
+  <!--返回顶部-->
+  <div id="fanHuidb">
+    <div class="fanhuidb"></div>
+  </div>
+
+  <footer></footer>
+
+
+
+
+
+</body>
+</html>
